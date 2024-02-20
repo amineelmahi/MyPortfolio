@@ -1,0 +1,125 @@
+/* Header Design without menu */
+
+header.flex {
+  justify-content: space-between;
+  padding: 0 2.4rem;
+  margin-top: 1.5rem;
+}
+
+header.flex nav {
+  background-color: var(--bgheader);
+  padding: 0.77rem 1.7rem;
+  border-radius: 55px;
+  box-shadow: 2px 2px 2px rgba(70, 65, 65, 0.781);
+}
+
+header ul.flex {
+  gap: 16px;
+}
+
+header ul li a {
+  color: var(--title);
+  opacity: 0.9;
+  font-size: 0.9rem;
+  font-weight: 450;
+}
+header ul li a:hover {
+  color: var(--blue);
+  opacity: 1;
+  font-size: 1.01rem;
+}
+header button {
+  font-size: 1.2rem;
+}
+header .menu {
+  display: none;
+}
+
+/* icon Button */
+
+header button.mode,
+.icon-menu {
+  background-color: var(--bgheader);
+  height: 2rem;
+  width: 2rem;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--subtitle);
+  border: 1px solid rgba(250, 128, 114, 0.288);
+}
+header button.mode:hover,
+.icon-menu:hover {
+  color: var(--title);
+  border: 1px solid rgba(250, 128, 114, 0.63);
+  transition: 0.2s;
+}
+
+header .icon-close {
+  font-size: 1.2rem;
+  color: var(--subtitle);
+  transition: 0.2s;
+}
+
+header .icon-close:hover {
+  font-size: 1.5rem;
+  color: crimson;
+  rotate: 180deg;
+}
+
+
+/*Pop Up (menu) design*/
+header .fixed {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(90, 83, 83, 0.829);
+  z-index: 11;
+}
+@keyframes MenuAnimation {
+  0% {
+    scale: 0;
+  }
+  60% {
+    scale: 1.1;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+header .fixed ul.modal {
+  animation: MenuAnimation 0.7s 1;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  background-color: var(--secondary);
+}
+
+header .fixed ul.modal li {
+  border-bottom: 1px solid var(--border);
+  padding: 10px;
+}
+header .fixed ul.modal li:last-child {
+  border: none;
+}
+header .fixed ul.modal li a {
+  font-size: 0.96rem;
+}
+header .fixed ul.modal li:first-child {
+  text-align: end;
+  border: none;
+  padding: 0 0px;
+}
+
+/*Make it responsive*/
+
+@media (max-width: 700px) {
+  header.flex nav {
+    display: none;
+  }
+  header .menu {
+    display: flex;
+  }
+}
