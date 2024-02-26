@@ -58,6 +58,7 @@ header .icon-close {
   font-size: 1.2rem;
   color: var(--subtitle);
   transition: 0.2s;
+  margin-top: -1rem;
 }
 
 header .icon-close:hover {
@@ -66,13 +67,14 @@ header .icon-close:hover {
   rotate: 180deg;
 }
 
-
 /*Pop Up (menu) design*/
+
 header .fixed {
   position: fixed;
   inset: 0;
   background-color: rgba(90, 83, 83, 0.829);
   z-index: 11;
+  backdrop-filter: blur(3px);
 }
 @keyframes MenuAnimation {
   0% {
@@ -88,7 +90,7 @@ header .fixed {
 
 header .fixed ul.modal {
   animation: MenuAnimation 0.7s 1;
-  width: 85%;
+  width: 75%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2rem;
@@ -113,7 +115,7 @@ header .fixed ul.modal li:first-child {
   padding: 0 0px;
 }
 
-/*Make it responsive*/
+/*Make it responsive(media query)*/
 
 @media (max-width: 700px) {
   header.flex nav {

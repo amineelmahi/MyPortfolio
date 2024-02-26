@@ -1,22 +1,21 @@
-import Hero from "./components/Hero/Hero";
-import Header from "./components/Header/Header";
+import Hero from "./components/2-Hero/Hero";
+import Header from "./components/1-Header/Header";
 import { useState } from "react";
-import Main from "./components/Main/Main";
-import Contact from "./Contact/Contact";
-import Footer from "./Footer/Footer";
+import Main from "./components/3-Main/Main";
+import Contact from "./components/4-Contact/Contact";
+import Footer from "./components/5-Footer/Footer";
 
 function App() {
   return (
     <div className="Container">
       <Header />
-      <div className="divider"/>
       <Hero />
-      <div className="divider"/>
-      <Main/>
-      <div className="divider"/>
-      <Contact/>
-      <div className="divider"/>
-      <Footer/>
+      <div className="divider" />
+      <Main />
+      <div className="divider" />
+      <Contact />
+      <div className="divider" />
+      <Footer />
     </div>
   );
 }

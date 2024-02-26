@@ -1,0 +1,59 @@
+section.hero {
+  margin-top: 3rem;
+}
+/* Left Section */
+section.hero .left-section {
+  flex-grow: 1;
+}
+
+/* PDP & Verified*/
+
+section.hero .parent-avatar {
+  align-items: end;
+}
+
+section.hero .icon-verified {
+  color: var(--blue);
+  margin-bottom: 11px;
+}
+
+section.hero .avatar {
+  height: 8rem;
+  width: 8rem;
+  border: 1px solid rgb(238, 146, 161);
+  border-radius: 50%;
+  padding: 2px;
+  box-shadow: 2px 2px 40px rgb(134, 129, 129) inset;
+}
+
+/* title & subtitle*/
+
+section.hero h1.title {
+  font-size: 2rem;
+  line-height: 3rem;
+  margin: 24px 0px;
+  color: var(--title);
+}
+
+section.hero p.sub-title {
+  color: var(--subtitle);
+  font-size: 0.9rem;
+  line-height: 1.8rem;
+  margin-bottom: 30px;
+}
+
+/* Insta , github,linkedin icons */
+
+section.hero .icons {
+  font-size: 1.2rem;
+  color: var(--subtitle);
+  gap: 1.2rem;
+}
+
+section.hero .icons .icon:hover {
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: 0.3s;
+  color: aliceblue;
+}
+/* Right Section (Animation)*/
